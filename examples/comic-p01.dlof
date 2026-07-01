@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  مثال: صفحة أولى من قصة مصورة (domain=comic, comicPanel)
+  هذا الملف يطابق تماماً الناتج الذي تنتجه org.dlof.lib.writer.DlofWriter
+  عند بناء مستند عبر comicPanel { ... } في DlofDsl.kt أو ComicPanel(...) في جافا.
+-->
+<documentLoop xmlns="https://dlof.org/schema/1.0" version="1.0" id="mycomic-p01">
+  <metadata>
+    <title>الصفحة الأولى</title>
+    <domain>comic</domain>
+    <author>المؤلف</author>
+    <language>ar</language>
+    <tags>
+      <tag>قصة-مصورة</tag>
+    </tags>
+  </metadata>
+
+  <loopLinks>
+    <next ref="p02.dlof"/>
+    <loopRoot>true</loopRoot>
+  </loopLinks>
+
+  <content>
+    <comicPanel panelWidth="12" backgroundColor="#1A1A2E">
+      <pageNumber>1</pageNumber>
+      <panelNumber>1</panelNumber>
+      <imageAttachmentRef>img-mycomic-p01</imageAttachmentRef>
+      <altText>سماء المدينة عند الفجر</altText>
+      <caption>سماء المدينة عند الفجر</caption>
+      <dialogue>
+        <line type="speech" characterName="سارة">أخيراً وصلنا إلى مدينة النور!</line>
+        <line type="narration">بعد رحلة طويلة عبر الصحراء...</line>
+      </dialogue>
+    </comicPanel>
+  </content>
+</documentLoop>
