@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  مثال: ملف تعريف شخصيات (domain=characters) يطابق ناتج CharactersContent/YimeRoster
+  في dlof-lib، صالح لاستخدامه مع مسلسل أو قصة مصورة على حد سواء.
+-->
+<documentLoop xmlns="https://dlof.org/schema/1.0" version="1.0" id="myseries-characters">
+  <metadata>
+    <title>سلسلتي — الشخصيات</title>
+    <domain>characters</domain>
+    <author>المؤلف</author>
+    <language>ar</language>
+  </metadata>
+
+  <loopLinks>
+    <loopRoot>false</loopRoot>
+  </loopLinks>
+
+  <content>
+    <characters seriesTitle="سلسلتي" loopId="myseries-characters">
+      <character id="sara" name="سارة" role="protagonist" gender="female" status="alive">
+        <description>مهندسة ذكاء اصطناعي في مدينة النور، شجاعة وفضولية.</description>
+        <appearsIn>ep01.dlof ep02.dlof p01.dlof</appearsIn>
+      </character>
+      <character id="omar" name="عمر" role="supporting" gender="male" status="alive">
+        <description>رفيق سارة في المهمة، حذر ومنطقي.</description>
+        <appearsIn>ep01.dlof p02.dlof</appearsIn>
+      </character>
+    </characters>
+  </content>
+</documentLoop>
